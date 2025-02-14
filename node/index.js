@@ -16,6 +16,8 @@ connection.connect()
 app.get('/', (req, res) => {
   let body = '<h1>Full Cycle Rocks!</h1>'
 
+  let sqlCreateTable = "CREATE TABLE IF NOT EXISTS people ( id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL)"
+  connection.query(sqlCreateTable)
 
   let uuid = crypto.randomUUID();
   const nameToInsert = 'User-' + uuid
