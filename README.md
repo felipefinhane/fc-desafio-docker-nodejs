@@ -23,7 +23,13 @@ Suba tudo em um repositório e faça a entrega.
 ### Docker Compose
 
 ```bash
-docker compose up -d
+docker compose up -d --build
 ```
+
+## Como acessar
+
+### Browser
+
+`http:localhost:8080`
 
 
